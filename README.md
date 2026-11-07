@@ -93,8 +93,10 @@ fintech clients) + the standard book/WhatsApp CTAs with `utm_source=paymony`.
 
 1. **Deploy** — static folder; Render Static Site (free tier per the network
    rule). The repo's `render.yaml` blueprint pre-fills the service name
-   (`paymony`) and publish path (`.`). Expected live URL once created:
-   https://paymony.onrender.com
+   (`paymony`) and publish path (`.`). Live since Nov 6, 2026 at
+   https://paymony-7t51.onrender.com — Render suffixed the service name
+   (`paymony` was already taken), so the plain `paymony.onrender.com` URL
+   does NOT resolve; the live URL is the suffixed one.
 2. **Domain attach** — point `paymony.net` DNS at the host (same checklist
    pattern as `../DEPLOY.md` §4: apex A + www CNAME from the host's screen;
    no MX changes — mail stays on influugc.com).
